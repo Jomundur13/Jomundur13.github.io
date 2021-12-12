@@ -1,0 +1,92 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{	
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.col-2
+{
+	border-style: solid;
+	border-width: 1px;
+	
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 10px;
+}
+
+.col-2 > div 
+{
+	padding: 20px;
+}
+
+.col-3
+{
+	border-style: solid;
+	border-width: 1px;
+	
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+}
+.col-3 > div 
+{
+	padding: 20px;
+}
+
+.col-4
+{
+	border-style: solid;
+	border-width: 1px;
+	
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	padding: 10px;
+}
+.col-4 > div 
+{
+	padding: 20px;
+}
+
+/*Fyrir stóran skjá*/
+@media screen and (max-width:60em)
+{
+.col-2{
+	grid-template-columns: auto auto;}
+	
+.col-3{
+	grid-template-columns: auto auto auto;}
+
+.col-4{
+	grid-template-columns: auto auto auto auto;}
+}
+
+/*Fyrir ipad*/
+@media screen and (max-width:48em)
+{
+.col-2{
+	grid-template-columns: auto auto;}
+	
+.col-3{
+	grid-template-columns: auto auto;}
+
+.col-4{
+	grid-template-columns: auto auto;}
+}
+
+/*Fyrir síma*/
+@media screen and (max-width:37.5em)
+{
+.col-2{
+	grid-template-columns: auto;}
+	
+.col-3{
+	grid-template-columns: auto;}
+
+.col-4{
+	grid-template-columns: auto;}
+}
