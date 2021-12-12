@@ -1,0 +1,61 @@
+h1
+{
+	border-style: solid;
+	border-color: green;
+}
+
+div
+{
+	border-style: solid;
+	border-color: red;
+	border-width: 5px;
+	color: red;
+	padding: 2em;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.boxtxt2
+{
+	border-style: dashed;
+	border-color: blue;
+	border-width: 5px;	
+	color: blue;
+	padding: 20px;
+}
+
+.listi_1 li
+{
+	display: block;
+	border-style: dashed;
+	border-color: green;
+	border-width: 3px;
+	padding: 1em;
+	margin: 1em;
+}
+
+.listi_2 li
+{
+	display: inline;
+	border-style: dashed;
+	border-color: blue;
+	border-width: 3px;
+	padding: 1em;
+	margin: 1em;
+}
+
+.in_line_block li
+{
+	display: inline-block;
+	border-style: dashed;
+	border-color: red;
+	border-width: 3px;
+	padding: 1em;
+	margin: 1em;
+}
+
+body
+{
+	margin: 0 auto;
+	width: 96%
+}
