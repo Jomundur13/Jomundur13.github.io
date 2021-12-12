@@ -1,0 +1,99 @@
+*{box-sizing: border-box;}
+
+body
+{
+	
+}
+
+.container
+{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto auto auto; 
+	grid-template-areas:
+		"h"
+		"t"
+		"a2"
+		"a1"
+		"m1"
+		"m2"
+		"m3"
+		"m4"
+		"m5"
+		"m6"
+		"f1"
+		"f2"
+		"f3";
+}
+
+img
+{
+	max-width: 200%;
+	height: auto;
+}
+
+header {grid-area: h;}
+.titill
+{
+	text-align: center;
+	grid-area: t;
+}
+.a1 {grid-area: a1;}
+.a2 {grid-area: a2;}
+.mynd1
+{
+	grid-area: m1;
+	margin: 10px;
+	max-width: 100%;
+	max-height: 50%;
+}
+.mynd2{grid-area: m2;}
+.mynd3{grid-area: m3;}
+.mynd4{grid-area: m4;}
+.mynd5{grid-area: m5;}
+.mynd6{grid-area: m6;}
+.f1 {grid-area: f1;}
+.f2 {grid-area: f2;}
+.f3 {grid-area: f3;}
+.copy {text-align: center;}
+
+
+@media only screen and (min-width: 30em)
+{
+	body
+	{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.container
+	{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-areas:
+			"h h"
+			"t t"
+			"a2 a1"
+			"a2 a1"
+			"m1 m2"
+			"f1 f2";
+	}
+	
+	.myndir
+	{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas:
+			"m1 m2"
+			"m3 m4"
+			"m5 m6"
+	}
+	
+	.col-3
+	{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas:
+			"f1 f2 f3"
+	}
+}
